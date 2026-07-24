@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IAP Business Card</title>
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+
+body{
+    background:#e5e5e5;
+    font-family:'Segoe UI', Arial, sans-serif;
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    padding:20px;
+    gap:25px;
+}
+
+.card{
+    width:min(95vw, 850px);
+    background:#faf8f3;
+    border-radius:8px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.20);
+    padding:5%;
+    display:grid;
+    grid-template-columns:40% 60%;
+    grid-template-rows:55% 45%;
+    overflow:visible;
+}
+
+.logo-block img{
+    width:15%;
+    min-width:60px;
+    max-width:100px;
+    height:auto;
+}
+
+.identity{
+    padding-left:8%;
+    padding-top:2%;
+}
+
+.name{
+    font-size:clamp(18px, 4vw, 42px);
+    color:#000;
+    font-weight:300;
+    margin-bottom:10px;
+    white-space:nowrap;
+}
+
+.name strong{font-weight:700;}
+    
+.name-line{
+    width:80px;
+    height:4px;
+    background:linear-gradient(to right,#f26b21,#ff9b5a);
+    border-radius:50px;
+    margin:10px 0 15px;
+}    
+
+.position{
+    font-size:clamp(12px, 2.5vw, 26px);
+    color:#000;
+    line-height:1.2;
+}
+
+.address{
+    align-self:end;
+    font-size:clamp(10px, 2vw, 22px);
+    color:#000;
+    line-height:1.3;
+}
+
+.website{
+    margin-top:8px;
+    color:#f26b21;
+}
+
+.contact{
+    align-self:end;
+    padding-left:8%;
+}
+
+.contact-item{
+    display:flex;
+    align-items:center;
+    margin-bottom:8px;
+    font-size:clamp(10px, 2vw, 21px);
+    color:#000;
+}
+
+.icon{
+    width:28px;
+    margin-right:8px;
+    text-align:center;
+}
+
+.actions{
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    flex-wrap:wrap;
+}
+
+.contact-btn,
+.site-btn{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    padding:14px 28px;
+    color:#fff;
+    text-decoration:none;
+    font-weight:600;
+    border-radius:8px;
+    font-size:18px;
+    transition:.3s;
+}
+
+.contact-btn{background:#f26b21;}
+.contact-btn:hover{background:#d95d18;}
+
+.site-btn{background:#0d2b63;}
+.site-btn:hover{background:#081d46;}
+</style>
+</head>
+
+<body>
+
+<div class="card">
+
+    <div class="logo-block">
+        <img src="sonatrach_logo.png" alt="Sonatrach IAP">
+    </div>
+
+    <div class="identity">
+        <div class="name">
+            Mohamed Lamine <strong>MAKHLOUF</strong>
+        </div>
+
+    <div class="name-line"></div>    
+
+        <div class="position">
+            Directeur  Ecole de Boumerdes
+        </div>
+    </div>
+
+    <div class="address">
+        SONATRACH / Institut<br>
+        Algérien du Pétrole (IAP)<br>
+        Avenue du 1er Novembre<br>
+        Boumerdès 35000, Algérie
+
+        <div class="website">
+            https://sonatrach.com/
+        </div>
+    </div>
+
+    <div class="contact">
+        <div class="contact-item">
+            <span class="icon">☎</span>
+            +213 (0) 24 000 000
+        </div>
+
+        <div class="contact-item">
+            <span class="icon">📱</span>
+            +213 (0) 670 409 718
+        </div>
+
+        <div class="contact-item">
+            <span class="icon">🖨</span>
+            2106 5019
+        </div>
+
+        <div class="contact-item">
+            <span class="icon">✉</span>
+            Mohamed-Lamine.Makhlouf@sonatrach.dz
+        </div>
+    </div>
+
+</div>
+
+<div class="actions">
+    <a class="contact-btn" href="contact.vcf" target="_blank">
+        📇 Add Contact
+    </a>
+
+    <a class="site-btn" href="https://sonatrach.com/" target="_blank">
+        🌐 SONATRACH
+    </a>
+</div>
+
+</body>
+</html>
